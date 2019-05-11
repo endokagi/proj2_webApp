@@ -18,10 +18,12 @@ $(function(){
             return false;
         }else if(!(user =="admin@nw.com" && pass=="12345**")){
             alert("Something went wrong"+"\nTry to use again");
-            window.location.replace();
+            return false;
         }else {
-            window.location.href="../../dashboard.html";
+            window.location.href="./dashboard.html";
             return true;
         }
+
+        
     });
 });
