@@ -1,17 +1,24 @@
 $(function () {
-    $("#customer_js").click(function () {
-        $.get("../data/customers.json", function (response,search) {
-            if (response == 'success') {
-            var tableHead = '<tr><th>customerID</th><th>companyName</th><th>contactName</th><th>contactTitle</th></tr>';
-            $('#get_customer').append(tableHead);
-            var imdb = search.Search;
-            for (var index in imdb) {
-                var cus = imdb[index];
-                var tableRow = '<tr><td>' + cus.customerID + '</td><td>' + cus.companyName + '</td><td>' + cus.contactName + '</td><td>' + cus.contactTitle + '</td></tr>';
-                $('#datalist').append(tableRow);
-                console.log(imdb);
+    $.get("data/customers.json", function (data, status) {
+        if (status == 'success') {
+            console.log("Success");
+            var customer = data;
+            for (var index in data) {
+                cus = customer[index];
+                var tableRow = '<tr><td>' + cus.customerID +
+                    '</td><td><a href="custdetail.html" onClick="setCookie(' + index + ')">' +
+                    cus.companyName + '</a></td><td>' +
+                    cus.contactName + '</td><td>' +
+                    cus.contactTitle + '</td></tr>';
+                $('#customer_table').append(tableRow);
             }
-            }
-        });
+        } else {
+            console.log("Something went wrong");
+        }
     });
 });
+
+function setCookie(index) {
+    var cus = index;
+    document.cookie = cus;
+}

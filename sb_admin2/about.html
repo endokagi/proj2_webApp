@@ -9,17 +9,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Customers</title>
+  <title>About</title>
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
-
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../sb_admin2/js/customers.js">
 
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -51,14 +47,14 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-question"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Workshop</sup></div>
+        <div class="sidebar-brand-text mx-3">Workshop</div>
       </a>
 
       <!-- Divider -->
@@ -68,7 +64,7 @@
       <li class="nav-item">
         <a class="nav-link" href="dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span class="fontAcme">Dashboard</span></a>
       </li>
 
       <!-- Divider -->
@@ -79,11 +75,25 @@
         Information
       </div>
 
-      <!-- Nav Item - Tables -->
+      <!-- Nav Item - Customers Table -->
       <li class="nav-item active">
         <a class="nav-link" href="customer.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Customers Table</span></a>
+          <span class="fontAcme">Customer</span></a>
+      </li>
+
+      <!-- Nav Item - About -->
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">
+          <i class="fas fa-fw fa-address-book"></i>
+          <span class="fontAcme">About</span></a>
+      </li>
+
+      <!-- Nav Item - Customers Table -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" data-toggle="modal" data-target="#logoutModal">
+          <i class="fas fa-fw fa-sign-out-alt"></i>
+          <span class="fontAcme">Sign out</span></a>
       </li>
 
       <!-- Divider -->
@@ -120,8 +130,8 @@
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Witthawad Tanoi</span>
-                <img class="img-profile rounded-circle"
-                  src="https://scontent-frt3-2.cdninstagram.com/vp/92543b343dd9519c7d30135c85b1eca6/5D58732F/t51.2885-15/e35/s320x320/42165284_1887999174619957_5175640823556045428_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&ig_cache_key=MTg3Nzk2NDk1MjUzNjcxMzM3Ng%3D%3D.2">
+                <img class="img-profile rounded-circle shadow"
+                  src="img/mess.jpg">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -132,7 +142,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                  Sign out
                 </a>
               </div>
             </li>
@@ -154,7 +164,7 @@
             <hr class="shadow">
             <div class="col text-center">
               <img class="rounded-circle img_me"
-                src="../sb_admin2/img/mes.jpg"
+                src="../sb_admin2/img/mess.jpg"
                 alt="It's me!">
               <p></p>
             </div>
@@ -217,10 +227,10 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">Select "Sign out" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="index.html">Logout</a>
+          <a class="btn btn-primary" href="index.html">Sign out</a>
         </div>
       </div>
     </div>

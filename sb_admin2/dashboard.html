@@ -45,7 +45,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-question"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Workshop</div>
       </a>
@@ -57,7 +57,7 @@
       <li class="nav-item">
         <a class="nav-link" href="dashboard.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span class="fontAcme">Dashboard</span></a>
       </li>
 
       <!-- Divider -->
@@ -78,14 +78,14 @@
       <!-- Nav Item - About -->
       <li class="nav-item active">
         <a class="nav-link" href="about.html">
-          <i class="fas fa-fw fa-table"></i>
+          <i class="fas fa-fw fa-address-book"></i>
           <span class="fontAcme">About</span></a>
       </li>
 
       <!-- Nav Item - Customers Table -->
       <li class="nav-item active">
         <a class="nav-link" href="index.html" data-toggle="modal" data-target="#logoutModal">
-          <i class="fas fa-fw fa-table"></i>
+          <i class="fas fa-fw fa-sign-out-alt"></i>
           <span class="fontAcme">Sign out</span></a>
       </li>
 
@@ -122,8 +122,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Witthawad Tanoi</span>
-                <img class="img-profile rounded-circle"
-                  src="../sb_admin2/img/mes.jpg">
+                <img class="img-profile rounded-circle" src="../sb_admin2/img/mess.jpg">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -134,7 +133,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="index.html" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
+                  Sign out
                 </a>
               </div>
             </li>
@@ -153,154 +152,132 @@
           </div>
 
           <!-- Content Row -->
-          <div class="group">
-
-            <!-- Peoduct -->
-            <div class="col-xl-12 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total No. of Products</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <label id="product_dash"></label>
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="product_dash"></div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                              aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="group table-reponsive">
+            <table class="table">
+              <!-- Peoduct -->
+              <tr>
+                <td>
+                  <div class="col-xl-12 col-md-6 mb-4">
+                    <div class="card border-left-info shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total No. of Products
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="product_dash"></div>
+                          </div>
+                          <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-info"></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-info"></i>
-                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Customer -->
-            <div class="col-xl-9 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total No. of Customers</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <label id="customer_dash"></label>
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="customer_dash"></div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
-                              aria-valuemin="0" aria-valuemax="100"></div>
+                </td>
+                <td></td>
+              </tr>
+              <!-- Customer -->
+              <tr>
+                <td></td>
+                <td>
+                  <div class="col-xl-12 col-md-6 mb-4">
+                    <div class="card border-left-warning shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total No. of
+                              Customers
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="customer_dash"></div>
+                          </div>
+                          <div class="col-auto">
+                            <i class="fas fa-address-book fa-2x text-warning"></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-address-book fa-2x text-warning"></i>
-                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Supplier -->
-            <div class="col-xl-6 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Total No. of Suppliers</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="supply_dash"></div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50"
-                              aria-valuemin="0" aria-valuemax="100"></div>
+                </td>
+              </tr>
+              <!-- Supplier -->
+              <tr>
+                <td>
+                  <div class="col-xl-12 col-md-6 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total No. of
+                              Suppliers
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="supply_dash"></div>
+                          </div>
+                          <div class="col-auto">
+                            <i class="fas fa-dollar-sign fa-2x text-danger"></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-danger"></i>
-                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Order -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total No. of Orders</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" id="order_dash"></div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50"
-                              aria-valuemin="0" aria-valuemax="100"></div>
+                </td>
+                <td></td>
+              </tr>
+              <!-- Order -->
+              <tr>
+                <td></td>
+                <td>
+                  <div class="col-xl-12 col-md-6 mb-4">
+                    <div class="card border-left-success shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total No. of Orders
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="order_dash"></div>
+                          </div>
+                          <div class="col-auto">
+                            <i class="fas fa-clipboard-list fa-2x text-success"></i>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-success"></i>
+                  </div>
+                </td>
+              </tr>
+              <!-- Logout Modal-->
+              <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">Select "Sign out" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                      <a class="btn btn-primary" href="index.html">Sign out</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+          </div>
 
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                  <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="index.html">Logout</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </table>
+          <!-- Bootstrap core JavaScript-->
+          <script src="vendor/jquery/jquery.min.js"></script>
+          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <!-- Core plugin JavaScript-->
+          <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+          <!-- Custom scripts for all pages-->
+          <script src="js/sb-admin-2.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
-
-            <!-- Page level plugins -->
-            <script src="vendor/chart.js/Chart.min.js"></script>
-
-            <!-- Page level custom scripts -->
-            <script src="js/demo/chart-area-demo.js"></script>
-            <script src="js/demo/chart-pie-demo.js"></script>
+          <!-- Page level plugins -->
+          <script src="js/dashboard.js"></script>
 
 </body>
 
