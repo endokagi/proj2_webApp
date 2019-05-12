@@ -17,32 +17,16 @@
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../sb_admin2/js/customers.js">
-
   <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Acme|Modak" rel="stylesheet">
-  <style>
-    .fontAcme {
-      font-family: 'Acme', sans-serif;
-    }
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../sb_admin2/js/customers.js">
 
-    .fontModak {
-      font-family: 'Modak', cursive;
-    }
-
-    .img_me{
-      width: 450px;
-      height: 450px;
-    }
-  </style>
 </head>
 
 <body id="page-top">
@@ -146,48 +130,33 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="container">
-            <p></p>
-            <div class="col text-center text-info">
-              <h1 class="fontModak shadow">Profile</h1>
+          <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+          <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more
+            information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official
+              DataTables documentation</a>.</p>
+
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
             </div>
-            <hr class="shadow">
-            <div class="col text-center">
-              <img class="rounded-circle img_me"
-                src="../sb_admin2/img/mes.jpg"
-                alt="It's me!">
-              <p></p>
-            </div>
-            <p></p>
-            <div class="text-center fontAcme">
-              <table class="table container">
-                <tr>
-                  <th scope="row">Name</th>
-                  <td>Witthawad Tanoi</td>
-                </tr>
-                <tr>
-                  <th scope="row">ID</th>
-                  <td>6030213041</td>
-                </tr>
-                <tr>
-                  <th scope="row">Major</th>
-                  <td>SE</td>
-                </tr>
-                <tr>
-                  <th scope="row">Age</th>
-                  <td>21</td>
-                </tr>
-                <tr>
-                  <th scope="row">Favorite Subject</th>
-                  <td>Physic</td>
-                </tr>
-                <tr>
-                  <td colspan="2"><a class="btn btn-outline-primary" href="dashboard.html">Back to Dashboard</a></td>
-                </tr>
-              </table>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Position</th>
+                      <th>Office</th>
+                      <th>Age</th>
+                    </tr>
+                  </thead>
+                  <tbody id="customer_js">
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-          <!-- DataTales Example -->
 
         </div>
         <!-- /.container-fluid -->
